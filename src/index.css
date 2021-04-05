@@ -1,0 +1,104 @@
+*           {margin: 0;
+             padding: 0.5%;
+             box-sizing: border-box;}
+
+html        {font-size: 16px;
+            font-family: 'Work Sans', sans-serif;}
+
+body       {background-image: url('balloons.jpg');
+            background-size:auto;
+            background-repeat: no-repeat;}
+
+.container  {border: 0.75rem solid dodgerblue; 
+            background-color: white;
+            padding: 2%;
+            width: 600px;
+            border-radius: 10px;
+            margin: 5% auto;}
+
+header      {color: dodgerblue;
+            text-align: center;}
+
+.formStyle   {display: inline-block;
+             padding: 1%;
+             margin: 1%;
+             font-weight: bold;}
+
+input        {min-width: 30%;
+              min-height: 5%;
+             font-family: "Work Sans";
+             font-size: 16px;
+             border: 1px solid grey;
+             box-shadow: 1.5% 1.5% 1em silver;}
+
+input:focus  {background-color: gold;}
+
+.buttonBlock  {display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 1% 2%;}
+
+label         {display: inline-block;
+              width: 75%;
+              text-align: right;
+              margin-right: 3%;}
+                                  
+button        {border-radius: 1%;
+              padding: 3% 3%;
+              border: none; 
+              cursor: pointer;
+              font-family: 'Work Sans';
+              font-size: 1em;
+              color: white;
+              box-shadow: 0.5% 0.5% 0.25em silver;
+              outline: none;
+              margin-top: 3%;}
+
+h1, h2, h3, p  {text-align: center;}
+
+h1            {color: orangered;}
+
+h2            {color: orangered;
+              font-size: 1.2em;
+              line-height: 1.5em;}
+
+h3            {font-size: 1em;
+              color: darkblue;}
+
+p             {color: darkblue;
+              font-weight: bold;}
+
+.Birthday     {font-size: 2em;
+              color: orangered;
+              transition: font-size ease-in 3s;}
+
+.counter      {font-size: 1.5em;
+              color: darkblue;
+              font-family: VT323;
+              letter-spacing:0.1em; }
+
+.ShowResultsStyle {border: 1% solid orangered;
+                  border-radius: 2%;}
+.showHide         {display:inline-block;}
+
+/* ________________Other Sized Screens___________________*/
+
+@media only screen and (min-width: 1450px) {
+html            {font-size: 22px;}
+.container      {width: 60vw; }
+input           {font-size: 22px;}
+button          {font-size: 1em;}
+}
+@media only screen and (max-width: 700px) {
+*               {padding: 2% 0%; }
+.ShowResultsStyle {display: flexbox;}
+h1              {float:unset;}
+.container      {width: 90%}
+label           {width: 100%;
+                text-align: center;
+                display: flex}
+input           {display: flex;
+                margin: 1% auto;
+                padding: 0%;}
+.showHide       {display: block;}                      
+}
