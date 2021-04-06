@@ -19,7 +19,7 @@ const ShowResults = ({values, toggleResults}) => {
     let birthMonth = new Date(birthday).getMonth();
         let birthdayDate = new Date(birthday).getDate();
     
-    let isBirthdayNextYear = (birthMonth < currentMonth || (birthMonth && birthdayDate < currentDayOfMonth));
+    let isBirthdayNextYear = (birthMonth < currentMonth || (birthMonth < currentMonth && birthdayDate < currentDayOfMonth));
     
     if (birthMonth === currentMonth && birthdayDate === currentDayOfMonth) {
         happyBirthday = true; 
