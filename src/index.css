@@ -43,7 +43,7 @@ label         {display: inline-block;
               text-align: right;
               margin-right: 3%;}
                                   
-button        {border-radius: 1%;
+button        {border-radius: 5%;
               padding: 3% 3%;
               border: none; 
               cursor: pointer;
